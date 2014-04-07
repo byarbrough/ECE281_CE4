@@ -2,25 +2,25 @@
 		   01	   3				Y	0	N
 	negLoop	   02	   4	OUT	0		N	1	Y
 		   03	   0				Y	0	N
-		   04	   2	NOT			N	0	Y
-		   05	   6	ADDI	1		N	1	Y
-		   06	   1				Y	0	N
-		   07	   2	NOT			N	0	Y
-		   08	   4	OUT	1		N	1	Y
-		   09	   1				Y	0	N
-		   0A	   2	NOT			N	0	Y
-		   0B	   6	ADDI	1		N	1	Y
-		   0C	   1				Y	0	N
-		   0D	   2	NOT			N	0	Y
-		   0E	   4	OUT	2		N	1	Y
+		   04	   6	ADDI	F		N	1	Y
+		   05	   F				Y	0	N
+		   06	   4	OUT	1		N	1	Y
+		   07	   1				Y	0	N
+		   08	   6	ADDI	F		N	1	Y
+		   09	   F				Y	0	N
+		   0A	   4	OUT	2		N	1	Y
+		   0B	   2				Y	0	N
+		   0C	   6	ADDI	F		N	1	Y
+		   0D	   F				Y	0	N
+		   0E	   9	JMP	negLoop		N	2	Y
 		   0F	   2				Y	0	N
-		   10	   2	NOT			N	0	Y
-		   11	   6	ADDI	1		N	1	Y
-		   12	   1				Y	0	N
-		   13	   2	NOT			N	0	Y
-		   14	   9	JMP	negLoop		N	2	Y
-		   15	   2				Y	0	N
-		   16	   0				Y	0	N
+		   10	   0				Y	0	N
+		   11	   0	NOP			N	0	Y
+		   12	   0	NOP			N	0	Y
+		   13	   0	NOP			N	0	Y
+		   14	   0	NOP			N	0	Y
+		   15	   0	NOP			N	0	Y
+		   16	   0	NOP			N	0	Y
 		   17	   0	NOP			N	0	Y
 		   18	   0	NOP			N	0	Y
 		   19	   0	NOP			N	0	Y
@@ -167,12 +167,12 @@
 		   A6	   0	NOP			N	0	Y
 		   A7	   0	NOP			N	0	Y
 		   A8	   0	NOP			N	0	Y
-		   A9	   0	NOP			N	0	Y
-		   AA	   0	NOP			N	0	Y
-		   AB	   0	NOP			N	0	Y
-		   AC	   0	NOP			N	0	Y
-		   AD	   0	NOP			N	0	Y
-		   AE	   0	NOP			N	0	Y
+		   A9	   0	NOP			N	0	N
+		   AA	   0	NOP			N	0	N
+		   AB	   0	NOP			N	0	N
+		   AC	   0	NOP			N	0	N
+		   AD	   0	NOP			N	0	N
+		   AE	   0	NOP			N	0	N
 		   AF	   0	NOP			N	0	Y
 		   B0	   0	
 		   B1	   0	
