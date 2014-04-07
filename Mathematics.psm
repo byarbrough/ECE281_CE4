@@ -1,17 +1,17 @@
-		   00	   7	LDAI	4		N	1	N
-		   01	   4				Y	0	N
-		   02	   1	NEG			N	0	N
-		   03	   E	ADDD	storeB0		N	2	N
-		   04	   0				Y	0	N
-		   05	   B				Y	0	N
-		   06	   E	ADDD	storeB0		N	2	N
-		   07	   0				Y	0	N
-		   08	   B				Y	0	N
-		   09	   4	OUT	2		N	1	N
-		   0A	   2				Y	0	N
-	end	   0B	   9	JMP	end		N	2	N
-		   0C	   B				Y	0	N
-		   0D	   0				Y	0	N
+		   00	   7	LDAI	C		N	1	N
+		   01	   C				Y	0	N
+		   02	   E	ADDD	storeB0		N	2	N
+		   03	   0				Y	0	N
+		   04	   B				Y	0	N
+		   05	   E	ADDD	storeB0		N	2	N
+		   06	   0				Y	0	N
+		   07	   B				Y	0	N
+		   08	   4	OUT	2		N	1	N
+		   09	   2				Y	0	N
+	end	   0A	   9	JMP	end		N	2	N
+		   0B	   A				Y	0	N
+		   0C	   0				Y	0	N
+		   0D	   0	NOP			N	0	N
 		   0E	   0	NOP			N	0	N
 		   0F	   0	NOP			N	0	N
 		   10	   0	NOP			N	0	N
@@ -174,7 +174,7 @@
 		   AD	   0	NOP			N	0	N
 		   AE	   0	NOP			N	0	N
 		   AF	   0	NOP			N	0	N
-	storeB0	   B0	   8	
+	storeB0	   B0	   6	
 		   B1	   0	
 		   B2	   0	
 		   B3	   0	
