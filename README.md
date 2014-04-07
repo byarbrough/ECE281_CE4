@@ -12,7 +12,13 @@ This is a screenshot of the programming for the Mathematics problem. The actual 
 
 ![alt text](https://github.com/byarbrough/ECE281_CE4/blob/master/Mathematics_Shot.PNG?raw=true "Mathematics.psm")
 
-The first thing it does is load a -4 into the accumulator. PRISM doesn't accept negative numbers, so instead Address (Addr) loads $C into the acumulator; this is 
+This doubles the value stored in RAM, subtracts 4, and outputs the result to port 2.
+
+1. Load a -4 into the accumulator. PRISM doesn't accept negative numbers, so instead Address (Addr) loads $C into the acumulator, which is -4 in two's complement.
+2. Add the value stored in RAM slot B0. The label is predefined, as is the value within the RAM.
+3. Add this number again; this is the same as doubling.
+4. Output the final value to port 2
+5. Infinite loop to prevent crashing.
 
 ##So What?
 Why go through all of this trouble in the first place? I mean, there are tons of high level languages out there which could do this with a lot less thinking on the human's part. But what happens once you figure out all of the semicolons in Java? Everything has to run through an assembler which puts it in Assembly language anyways. This is then compiled into the lovely 1's and 0's of machine code. As a Computer Engineer, it is important to know about some of the things that run "under the hood." This really ties in everything: registers, the ALU, MUX's, and even logic gates. Plus, I imagine that my friends will think me knowing Assembly is a lot cooler than the cyber guys who get scared to go past the keyboard.
